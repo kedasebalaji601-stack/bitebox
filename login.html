@@ -1,1 +1,53 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f097dbe45.js" crossorigin="anonymous"></script>
+    
+</head>
+</head>
+<body>
+     <header>
+         <img src="image.jpeg" alt="" height="70px" width="70px ">
+ <nav>
+        <a href="home.html">home</a>
+        <a href="menu.html">menu</a>
+        <a href="bitedeal.html">bitedeals</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>cart</a>
+        <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>login</a>
+       </nav>
+    </header>
+    <!-- header end here -->
+
+    <!-- login -->
+
+    <section class="auth-container">
+        <div class="auth-box">
+
+            <h2> Login To Bitebox</h2>
+
+         <form onsubmit="login()">
+            
+            <input type="email" placeholder="enter email" id="email" required>
+            <div style="position: relative;"> 
+                <span onclick="togglepassword()" style="position: absolute; right: 5px; top: 20%; color: black; transform: translateY(-50%); cursor: pointer;">
+                    <i class="fa-solid fa-eye" ></i>
+                </span>
+            
+            <input type="password" placeholder="password" id="password" required>
+            <button  onclick="login()" type="submit" >login</button>
+         </form>
+         <P id="error" style="color: red;"></P>
+         <span>forgot Password</span>
+        </div>
+         <p>Don't have a account <a href="signup.html">signup</a></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
